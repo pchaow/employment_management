@@ -11,7 +11,12 @@
   "title",
   "description",
   "wages",
-  "postby"
+  "postby",
+  "working_type",
+  "date_start",
+  "date_end",
+  "time_start",
+  "time_end"
  ],
  "fields": [
   {
@@ -36,13 +41,38 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "PostBy",
-   "options": "User",
-   "reqd": 1
+   "options": "User"
+  },
+  {
+   "fieldname": "working_type",
+   "fieldtype": "Select",
+   "label": "Part Time / Full Time",
+   "options": "Part Time\nFull Time"
+  },
+  {
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "Date Start"
+  },
+  {
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "Date End"
+  },
+  {
+   "fieldname": "time_start",
+   "fieldtype": "Time",
+   "label": "Time  Start"
+  },
+  {
+   "fieldname": "time_end",
+   "fieldtype": "Time",
+   "label": "Time End"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-20 21:56:41.670548",
+ "modified": "2023-05-21 23:09:08.653602",
  "modified_by": "Administrator",
  "module": "Employment Management",
  "name": "JobItem",
